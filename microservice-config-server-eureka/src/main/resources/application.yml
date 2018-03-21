@@ -7,11 +7,11 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/eacdy/spring-cloud-study/
+          uri: https://github.com/jaifei/spring-cloud-study.git
           search-paths: config-repo
           username: 
           password: 
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://discovery:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/

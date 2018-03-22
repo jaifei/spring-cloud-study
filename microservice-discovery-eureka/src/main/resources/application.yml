@@ -10,8 +10,7 @@ eureka:
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
   server:
-    enable-self-preservation: false  #关闭注册中心自我保护
-    eviction-interval-timer-in-ms: 10000  #注册中心清理间隔
+    renewalPercentThreshold: 0.49
 
 # 参考文档：http://projects.spring.io/spring-cloud/docs/1.0.3/spring-cloud.html#_standalone_mode
 # 参考文档：http://my.oschina.net/buwei/blog/618756
